@@ -1,0 +1,10 @@
+[Unit]
+Desription=My gas counter
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/gascounter.py 
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
